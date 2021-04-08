@@ -74,7 +74,8 @@
     }
     .img-country{
     width: 100%;
-     margin: 10px;
+    height: auto;
+     margin: 0px;
 }
     .country article .country-details {
   
