@@ -1,9 +1,11 @@
 import React, {useState} from "react";
-
+import {Link} from "react-router-dom";
 
 
 const Filter = (props) => {
-
+    const refreshPage = () => {
+      window.location.reload(false);
+    };
 
     return (
       <section className="filter">
@@ -26,7 +28,9 @@ const Filter = (props) => {
             value={props.values}
             onChange={props.onchange}
           >
-            <option value="All">Filter by region</option>
+            <option value="" selected>
+              Filter by region
+            </option>
             <option value="Africa">Africa</option>
             <option value="America">America</option>
             <option value="Asia">Asia</option>

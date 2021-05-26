@@ -12,7 +12,7 @@ body, img{
 body, #search, input::placeholder, .select, .article-element, .btn{
   color: hsl(0, 0%, 100%);
 }
-.header, #search, .select, .article-element, .btn{
+.header, #search, .select, .article-element, .btn {
 background-color: hsl(209, 23%, 22%);
 }
 .header,
@@ -33,12 +33,19 @@ background-color: hsl(209, 23%, 22%);
   padding: 0 70px 10px;
   border-bottom: 2px solid #212d38;
 }
+.header h2{
+  cursor: pointer;
+}
+.title{
+  text-decoration: none;
+}
 .header .theme-mode {
   cursor: pointer;
 }
 .header .fa-moon {
   transform: rotate(-35deg);
 }
+
 
 /* Filter */
 
@@ -81,6 +88,7 @@ img {
   border-radius: 5px;
   margin-bottom: 0;
   overflow: hidden ;
+  object-fit: cover;
 }
 
 .Countries {

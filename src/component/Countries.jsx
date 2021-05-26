@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import Filter from './Filter';
 
+
 const url = "https://restcountries.eu/rest/v2/all";
 
 const Countries = () => {
@@ -43,6 +44,7 @@ setFilterCountries(
           values={region}
           onchange={(e) => setRegion(e.target.value)}
         />
+        
         <div className="Countries">
           {filterCountries.map((country) => {
             const {
