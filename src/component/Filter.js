@@ -3,9 +3,7 @@ import {Link} from "react-router-dom";
 
 
 const Filter = (props) => {
-    const refreshPage = () => {
-      window.location.reload(false);
-    };
+   
 
     return (
       <section className="filter">
