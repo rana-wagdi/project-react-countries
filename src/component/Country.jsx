@@ -15,6 +15,15 @@ const Country = () => {
       };
       fetchCountryData();
     }, []);
+  //  if(cointry.borders.length>0){
+  //    console.log(borders)
+  //  }
+  // let filteredBorderCountries = borders();
+  // function borders(){
+  //   if (country.borders = 0){
+  //     return "error";
+  //   }
+  // }
     return (
       <div>
         <Link to="/" className="btn ">
@@ -23,6 +32,7 @@ const Country = () => {
          <section className="country">
                 {country.map((c)=>{
                     const{numericCode, flag, name, nativeName, population, region,subregion, capital, topLevelDomain, currencies, languages, borders} = c
+
 
                     return (
                       <article key={numericCode}>
@@ -68,13 +78,26 @@ const Country = () => {
                             <div className="border-section">
                               <h3>Border Countries: </h3>
                               <div className="borders">
-                                {borders.map((border) => {
+
+                            {/* ((borders.length != 0) ?{country.borders.map((border) => {
                                   return (
                                     <ul key={border}>
                                       <li>{border}</li>
                                     </ul>
                                   );
-                                })}
+                                })}: <p>Not found</p>) */}
+                                {/* {borders.length > 0 ? (borders.map((border) => {
+                                  return (
+                                    <ul key={border}>
+                                      <li>{border}</li>
+                                    </ul>)}))
+                                     : 
+                                      <p>Not found</p>
+                                    } */}
+                                
+                                    
+                              
+                                
                               </div>
                             </div>
                           </div>
