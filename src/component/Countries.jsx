@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import Filter from './Filter';
 
 
-const url = "https://restcountries.eu/rest/v2/all";
+const url = "https://restcountries.com/v2/all";
+
 
 const Countries = () => {
     const [countries, setCountries] = useState([])
